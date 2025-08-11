@@ -29,8 +29,7 @@ Siga os passos abaixo para configurar e rodar a aplicação em seu ambiente loca
     cp .env.example .env
 
     Configure o Banco de Dados:
-    Abra o arquivo .env recém-criado e ajuste as variáveis de conexão com o banco de dados de acordo com a sua configuração local:
-
+  
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
@@ -43,8 +42,7 @@ Siga os passos abaixo para configurar e rodar a aplicação em seu ambiente loca
     php artisan key:generate
 
     Execute as Migrations:
-    Este comando criará a tabela calculos no seu banco de dados, com base no arquivo de migration que já existe no projeto.
-
+    
     php artisan migrate
 
     Inicie o Servidor Local do Laravel:
