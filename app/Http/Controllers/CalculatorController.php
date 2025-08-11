@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CalcController extends Controller
+class CalculatorController extends Controller
 {
     public function index()
     {
-        return view('master');
+        return view('calculator');
     }
 
     public function calculate(Request $request)
@@ -35,6 +35,6 @@ class CalcController extends Controller
                 break;
         }
 
-        return view('master', ['result' => $result]);
+        return view('calculator', ['result' => $result]);
     }
 }

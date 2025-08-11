@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\CalcController;
+use App\Http\Controllers\CalculatorController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [CalcController::class, 'index'])->name('formCalc');
 
-Route::post('/', [CalcController::class, 'calculate'])->name('calculate');
+Route::get('/', HomeController::class)->name('home');
 
-    
+route::get('/calculadora', [CalculatorController::class, 'index'])->name('formCalc');
+route::post('/calculadora', [CalculatorController::class, 'calculate'])->name('calculate');
