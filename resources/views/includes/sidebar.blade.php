@@ -18,8 +18,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-700 hover:text-white">
-                            Calculadora
+                        <a href="{{ route('formAverage') }}" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-indigo-700 hover:text-white">
+                            Calcular média
                         </a>
                     </li>
                     <li>
